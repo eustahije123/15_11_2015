@@ -10,16 +10,19 @@ public class PonudaZalba implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "ID_ponudaZalba")
+   @org.kie.api.definition.type.Label("ID_ponudaZalba")
    private java.util.List<java.lang.Integer> ID_ponudaZalba;
-   @org.kie.api.definition.type.Label(value = "NazivDobavljaca")
+   @org.kie.api.definition.type.Label("NazivDobavljaca")
    private java.lang.String nazivDobavljaca;
-   @org.kie.api.definition.type.Label(value = "Ponuda")
+   @org.kie.api.definition.type.Label("Ponuda")
    private java.lang.Boolean ponuda;
-   @org.kie.api.definition.type.Label(value = "Zalba")
+   @org.kie.api.definition.type.Label("Zalba")
    private java.lang.Boolean zalba;
-   @org.kie.api.definition.type.Label(value = "DatumZaprimanja")
+   @org.kie.api.definition.type.Label("DatumZaprimanja")
    private java.util.Date datumZaprimanja;
+
+   @org.kie.api.definition.type.Label(value = "RjesenjeDKOM")
+   private java.lang.Boolean rjesenjeDKOM;
 
    public PonudaZalba()
    {
@@ -76,15 +79,27 @@ public class PonudaZalba implements java.io.Serializable
       this.datumZaprimanja = datumZaprimanja;
    }
 
+   public java.lang.Boolean getRjesenjeDKOM()
+   {
+      return this.rjesenjeDKOM;
+   }
+
+   public void setRjesenjeDKOM(java.lang.Boolean rjesenjeDKOM)
+   {
+      this.rjesenjeDKOM = rjesenjeDKOM;
+   }
+
    public PonudaZalba(java.util.List<java.lang.Integer> ID_ponudaZalba,
          java.lang.String nazivDobavljaca, java.lang.Boolean ponuda,
-         java.lang.Boolean zalba, java.util.Date datumZaprimanja)
+         java.lang.Boolean zalba, java.util.Date datumZaprimanja,
+         java.lang.Boolean rjesenjeDKOM)
    {
       this.ID_ponudaZalba = ID_ponudaZalba;
       this.nazivDobavljaca = nazivDobavljaca;
       this.ponuda = ponuda;
       this.zalba = zalba;
       this.datumZaprimanja = datumZaprimanja;
+      this.rjesenjeDKOM = rjesenjeDKOM;
    }
 
 }
