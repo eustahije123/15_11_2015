@@ -11,14 +11,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_predmeta")
+   @org.kie.api.definition.type.Label("id_predmeta")
    private java.lang.Integer id_predmeta;
-   @org.kie.api.definition.type.Label(value = "ebn")
+   @org.kie.api.definition.type.Label("ebn")
    private java.lang.String ebn;
-   @org.kie.api.definition.type.Label(value = "opis_predmeta")
+   @org.kie.api.definition.type.Label("opis_predmeta")
    private java.lang.String opis_predmeta;
-   @org.kie.api.definition.type.Label(value = "datum_pokretanja")
+   @org.kie.api.definition.type.Label("datum_pokretanja")
    private java.util.Date datum_popkretanja;
+
+   @org.kie.api.definition.type.Label(value = "odluka_pp")
+   private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
 
    public PREDMET_NABAVE()
    {
@@ -64,13 +67,25 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.datum_popkretanja = datum_popkretanja;
    }
 
+   public vvgnabava.otvorenipostupak.ODLUKA_PP getOdluka_pp()
+   {
+      return this.odluka_pp;
+   }
+
+   public void setOdluka_pp(vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
+   {
+      this.odluka_pp = odluka_pp;
+   }
+
    public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
-         java.lang.String opis_predmeta, java.util.Date datum_popkretanja)
+         java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
+         vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
       this.opis_predmeta = opis_predmeta;
       this.datum_popkretanja = datum_popkretanja;
+      this.odluka_pp = odluka_pp;
    }
 
 }
