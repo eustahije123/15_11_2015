@@ -11,16 +11,19 @@ public class PredmetNabave implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "ID_predmeta")
+   @org.kie.api.definition.type.Label("ID_predmeta")
    private java.lang.Integer ID_predmeta;
-   @org.kie.api.definition.type.Label(value = "EBN")
+   @org.kie.api.definition.type.Label("EBN")
    private java.lang.String EBN;
-   @org.kie.api.definition.type.Label(value = "OpisPredmeta")
+   @org.kie.api.definition.type.Label("OpisPredmeta")
    private java.lang.String opisPredmeta;
-   @org.kie.api.definition.type.Label(value = "InternaOdlukaIOP")
+   @org.kie.api.definition.type.Label("InternaOdlukaIOP")
    private vvgnabava.otvorenipostupak.InternaOdlukaIOP internaOdlukaIOP;
-   @org.kie.api.definition.type.Label(value = "Ponuda")
+   @org.kie.api.definition.type.Label("Ponuda")
    private java.util.List<vvgnabava.otvorenipostupak.PonudaZalba> ponuda;
+
+   @org.kie.api.definition.type.Label(value = "StatusPredmeta")
+   private vvgnabava.otvorenipostupak.SatusPredmeta statusPredmeta;
 
    public PredmetNabave()
    {
@@ -78,16 +81,29 @@ public class PredmetNabave implements java.io.Serializable
       this.ponuda = ponuda;
    }
 
+   public vvgnabava.otvorenipostupak.SatusPredmeta getStatusPredmeta()
+   {
+      return this.statusPredmeta;
+   }
+
+   public void setStatusPredmeta(
+         vvgnabava.otvorenipostupak.SatusPredmeta statusPredmeta)
+   {
+      this.statusPredmeta = statusPredmeta;
+   }
+
    public PredmetNabave(java.lang.Integer ID_predmeta, java.lang.String EBN,
          java.lang.String opisPredmeta,
          vvgnabava.otvorenipostupak.InternaOdlukaIOP internaOdlukaIOP,
-         java.util.List<vvgnabava.otvorenipostupak.PonudaZalba> ponuda)
+         java.util.List<vvgnabava.otvorenipostupak.PonudaZalba> ponuda,
+         vvgnabava.otvorenipostupak.SatusPredmeta statusPredmeta)
    {
       this.ID_predmeta = ID_predmeta;
       this.EBN = EBN;
       this.opisPredmeta = opisPredmeta;
       this.internaOdlukaIOP = internaOdlukaIOP;
       this.ponuda = ponuda;
+      this.statusPredmeta = statusPredmeta;
    }
 
 }
