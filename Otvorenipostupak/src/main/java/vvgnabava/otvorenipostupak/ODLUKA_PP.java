@@ -11,10 +11,13 @@ public class ODLUKA_PP implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_odluke")
+   @org.kie.api.definition.type.Label("id_odluke")
    private java.lang.Integer id_odluke;
-   @org.kie.api.definition.type.Label(value = "opis")
+   @org.kie.api.definition.type.Label("opis")
    private java.lang.String opis;
+
+   @org.kie.api.definition.type.Label(value = "predstavnici")
+   private java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici;
 
    public ODLUKA_PP()
    {
@@ -40,10 +43,25 @@ public class ODLUKA_PP implements java.io.Serializable
       this.opis = opis;
    }
 
-   public ODLUKA_PP(java.lang.Integer id_odluke, java.lang.String opis)
+   public java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> getPredstavnici()
+   {
+      return this.predstavnici;
+   }
+
+   public void setPredstavnici(
+         java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici)
+   {
+      this.predstavnici = predstavnici;
+   }
+
+   public ODLUKA_PP(
+         java.lang.Integer id_odluke,
+         java.lang.String opis,
+         java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici)
    {
       this.id_odluke = id_odluke;
       this.opis = opis;
+      this.predstavnici = predstavnici;
    }
 
 }
