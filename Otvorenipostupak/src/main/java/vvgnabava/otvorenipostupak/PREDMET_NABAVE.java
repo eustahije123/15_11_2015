@@ -23,8 +23,11 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_pp")
    private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
 
-   @org.kie.api.definition.type.Label(value = "ponuda")
+   @org.kie.api.definition.type.Label("ponuda")
    private vvgnabava.otvorenipostupak.PONUDA ponuda;
+
+   @org.kie.api.definition.type.Label(value = "zalba")
+   private vvgnabava.otvorenipostupak.ZALBA zalba;
 
    public PREDMET_NABAVE()
    {
@@ -90,10 +93,21 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.ponuda = ponuda;
    }
 
+   public vvgnabava.otvorenipostupak.ZALBA getZalba()
+   {
+      return this.zalba;
+   }
+
+   public void setZalba(vvgnabava.otvorenipostupak.ZALBA zalba)
+   {
+      this.zalba = zalba;
+   }
+
    public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
          java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
          vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
-         vvgnabava.otvorenipostupak.PONUDA ponuda)
+         vvgnabava.otvorenipostupak.PONUDA ponuda,
+         vvgnabava.otvorenipostupak.ZALBA zalba)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -101,6 +115,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.datum_popkretanja = datum_popkretanja;
       this.odluka_pp = odluka_pp;
       this.ponuda = ponuda;
+      this.zalba = zalba;
    }
 
 }
