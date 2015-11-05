@@ -23,14 +23,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_pp")
    private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
 
-   @org.kie.api.definition.type.Label(value = "ponuda")
+   @org.kie.api.definition.type.Label("ponuda")
    private java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda;
 
-   @org.kie.api.definition.type.Label(value = "zalba")
+   @org.kie.api.definition.type.Label("zalba")
    private java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba;
 
-   @org.kie.api.definition.type.Label(value = "zapisnik_uvid_ponude")
+   @org.kie.api.definition.type.Label("zapisnik_uvid_ponude")
    private java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude;
+
+   @org.kie.api.definition.type.Label(value = "pojasnjenje_dokumentacije")
+   private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija;
 
    public PREDMET_NABAVE()
    {
@@ -117,6 +120,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
    }
 
+   public java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> getPojasnjene_dokomentacija()
+   {
+      return this.pojasnjene_dokomentacija;
+   }
+
+   public void setPojasnjene_dokomentacija(
+         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija)
+   {
+      this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -125,7 +139,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
          java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda,
          java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba,
-         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude)
+         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude,
+         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -135,6 +150,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.ponuda = ponuda;
       this.zalba = zalba;
       this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
+      this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
    }
 
 }
