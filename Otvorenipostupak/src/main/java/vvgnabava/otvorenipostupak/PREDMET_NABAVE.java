@@ -12,12 +12,16 @@ public class PREDMET_NABAVE implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("id_predmeta")
+   @javax.persistence.Id
+   @javax.persistence.Column(nullable = false)
    private java.lang.Integer id_predmeta;
    @org.kie.api.definition.type.Label("ebn")
+   @javax.persistence.Column(nullable = false)
    private java.lang.String ebn;
    @org.kie.api.definition.type.Label("opis_predmeta")
    private java.lang.String opis_predmeta;
    @org.kie.api.definition.type.Label("datum_pokretanja")
+   @javax.persistence.Column(nullable = false)
    private java.util.Date datum_popkretanja;
 
    @org.kie.api.definition.type.Label("odluka_pp")
@@ -41,7 +45,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_odab_pon")
    private vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon;
 
-   @org.kie.api.definition.type.Label(value = "zalba_odab_pon")
+   @org.kie.api.definition.type.Label("zalba_odab_pon")
    private java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon;
 
    public PREDMET_NABAVE()
