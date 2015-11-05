@@ -11,12 +11,15 @@ public class ZAP_PREG_OCJ_PON implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_zapisnika")
+   @org.kie.api.definition.type.Label("id_zapisnika")
    private java.lang.Integer id_zapisnika;
-   @org.kie.api.definition.type.Label(value = "ebn")
+   @org.kie.api.definition.type.Label("ebn")
    private java.lang.String ebn;
-   @org.kie.api.definition.type.Label(value = "datum")
+   @org.kie.api.definition.type.Label("datum")
    private java.util.Date datum;
+
+   @org.kie.api.definition.type.Label(value = "opis")
+   private java.lang.String opis;
 
    public ZAP_PREG_OCJ_PON()
    {
@@ -52,12 +55,23 @@ public class ZAP_PREG_OCJ_PON implements java.io.Serializable
       this.datum = datum;
    }
 
-   public ZAP_PREG_OCJ_PON(java.lang.Integer id_zapisnika,
-         java.lang.String ebn, java.util.Date datum)
+   public java.lang.String getOpis()
+   {
+      return this.opis;
+   }
+
+   public void setOpis(java.lang.String opis)
+   {
+      this.opis = opis;
+   }
+
+   public ZAP_PREG_OCJ_PON(java.lang.Integer id_zapisnika, java.lang.String ebn,
+         java.util.Date datum, java.lang.String opis)
    {
       this.id_zapisnika = id_zapisnika;
       this.ebn = ebn;
       this.datum = datum;
+      this.opis = opis;
    }
 
 }
