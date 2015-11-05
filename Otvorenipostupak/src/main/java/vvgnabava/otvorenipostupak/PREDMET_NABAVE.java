@@ -23,11 +23,14 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_pp")
    private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
 
-   @org.kie.api.definition.type.Label("ponuda")
-   private vvgnabava.otvorenipostupak.PONUDA ponuda;
+   @org.kie.api.definition.type.Label(value = "ponuda")
+   private java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda;
 
    @org.kie.api.definition.type.Label(value = "zalba")
-   private vvgnabava.otvorenipostupak.ZALBA zalba;
+   private java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba;
+
+   @org.kie.api.definition.type.Label(value = "zapisnik_uvid_ponude")
+   private java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude;
 
    public PREDMET_NABAVE()
    {
@@ -83,31 +86,46 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.odluka_pp = odluka_pp;
    }
 
-   public vvgnabava.otvorenipostupak.PONUDA getPonuda()
+   public java.util.List<vvgnabava.otvorenipostupak.PONUDA> getPonuda()
    {
       return this.ponuda;
    }
 
-   public void setPonuda(vvgnabava.otvorenipostupak.PONUDA ponuda)
+   public void setPonuda(java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda)
    {
       this.ponuda = ponuda;
    }
 
-   public vvgnabava.otvorenipostupak.ZALBA getZalba()
+   public java.util.List<vvgnabava.otvorenipostupak.ZALBA> getZalba()
    {
       return this.zalba;
    }
 
-   public void setZalba(vvgnabava.otvorenipostupak.ZALBA zalba)
+   public void setZalba(java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba)
    {
       this.zalba = zalba;
    }
 
-   public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
-         java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
+   public java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> getZapisnik_uvid_ponude()
+   {
+      return this.zapisnik_uvid_ponude;
+   }
+
+   public void setZapisnik_uvid_ponude(
+         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude)
+   {
+      this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
+   }
+
+   public PREDMET_NABAVE(
+         java.lang.Integer id_predmeta,
+         java.lang.String ebn,
+         java.lang.String opis_predmeta,
+         java.util.Date datum_popkretanja,
          vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
-         vvgnabava.otvorenipostupak.PONUDA ponuda,
-         vvgnabava.otvorenipostupak.ZALBA zalba)
+         java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda,
+         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba,
+         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -116,6 +134,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.odluka_pp = odluka_pp;
       this.ponuda = ponuda;
       this.zalba = zalba;
+      this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
    }
 
 }
