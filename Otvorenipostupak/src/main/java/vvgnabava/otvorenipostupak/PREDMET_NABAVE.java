@@ -35,8 +35,11 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("pojasnjenje_dokumentacije")
    private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija;
 
-   @org.kie.api.definition.type.Label(value = "zapisnik_oc_pon")
+   @org.kie.api.definition.type.Label("zapisnik_oc_pon")
    private vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon;
+
+   @org.kie.api.definition.type.Label(value = "odluka_odab_pon")
+   private vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon;
 
    public PREDMET_NABAVE()
    {
@@ -145,6 +148,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_oc_pon = zapisnik_oc_pon;
    }
 
+   public vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON getOdluka_odab_pon()
+   {
+      return this.odluka_odab_pon;
+   }
+
+   public void setOdluka_odab_pon(
+         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon)
+   {
+      this.odluka_odab_pon = odluka_odab_pon;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -155,7 +169,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba,
          java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude,
          java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija,
-         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon)
+         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon,
+         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -167,6 +182,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
       this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
       this.zapisnik_oc_pon = zapisnik_oc_pon;
+      this.odluka_odab_pon = odluka_odab_pon;
    }
 
 }
