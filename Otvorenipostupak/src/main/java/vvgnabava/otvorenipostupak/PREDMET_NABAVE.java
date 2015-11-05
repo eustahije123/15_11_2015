@@ -32,8 +32,11 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("zapisnik_uvid_ponude")
    private java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude;
 
-   @org.kie.api.definition.type.Label(value = "pojasnjenje_dokumentacije")
+   @org.kie.api.definition.type.Label("pojasnjenje_dokumentacije")
    private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija;
+
+   @org.kie.api.definition.type.Label(value = "zapisnik_oc_pon")
+   private vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon;
 
    public PREDMET_NABAVE()
    {
@@ -131,6 +134,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
    }
 
+   public vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON getZapisnik_oc_pon()
+   {
+      return this.zapisnik_oc_pon;
+   }
+
+   public void setZapisnik_oc_pon(
+         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon)
+   {
+      this.zapisnik_oc_pon = zapisnik_oc_pon;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -140,7 +154,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda,
          java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba,
          java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude,
-         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija)
+         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija,
+         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -151,6 +166,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zalba = zalba;
       this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
       this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
+      this.zapisnik_oc_pon = zapisnik_oc_pon;
    }
 
 }
