@@ -19,8 +19,11 @@ public class PONUDA implements java.io.Serializable
    @org.kie.api.definition.type.Label("datu_ponude")
    private java.util.Date datum_ponude;
 
-   @org.kie.api.definition.type.Label(value = "dostavljeni_orginali")
+   @org.kie.api.definition.type.Label("dostavljeni_orginali")
    private java.lang.Boolean dostavljeni_orginali;
+
+   @org.kie.api.definition.type.Label(value = "prihvatljiva")
+   private java.lang.Boolean prihvatljiva;
 
    public PONUDA()
    {
@@ -76,15 +79,26 @@ public class PONUDA implements java.io.Serializable
       this.dostavljeni_orginali = dostavljeni_orginali;
    }
 
+   public java.lang.Boolean getPrihvatljiva()
+   {
+      return this.prihvatljiva;
+   }
+
+   public void setPrihvatljiva(java.lang.Boolean prihvatljiva)
+   {
+      this.prihvatljiva = prihvatljiva;
+   }
+
    public PONUDA(java.lang.Integer id_ponuda, java.lang.String ponuda_za_predmet,
          java.lang.String dobavljac, java.util.Date datum_ponude,
-         java.lang.Boolean dostavljeni_orginali)
+         java.lang.Boolean dostavljeni_orginali, java.lang.Boolean prihvatljiva)
    {
       this.id_ponuda = id_ponuda;
       this.ponuda_za_predmet = ponuda_za_predmet;
       this.dobavljac = dobavljac;
       this.datum_ponude = datum_ponude;
       this.dostavljeni_orginali = dostavljeni_orginali;
+      this.prihvatljiva = prihvatljiva;
    }
 
 }
