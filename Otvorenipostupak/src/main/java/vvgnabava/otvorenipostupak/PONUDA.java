@@ -10,14 +10,17 @@ public class PONUDA implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_ponuda")
+   @org.kie.api.definition.type.Label("id_ponuda")
    private java.lang.Integer id_ponuda;
-   @org.kie.api.definition.type.Label(value = "ponuda_za_predmet")
+   @org.kie.api.definition.type.Label("ponuda_za_predmet")
    private java.lang.String ponuda_za_predmet;
-   @org.kie.api.definition.type.Label(value = "dobavljac")
+   @org.kie.api.definition.type.Label("dobavljac")
    private java.lang.String dobavljac;
-   @org.kie.api.definition.type.Label(value = "datu_ponude")
+   @org.kie.api.definition.type.Label("datu_ponude")
    private java.util.Date datum_ponude;
+
+   @org.kie.api.definition.type.Label(value = "dostavljeni_orginali")
+   private java.lang.Boolean dostavljeni_orginali;
 
    public PONUDA()
    {
@@ -63,14 +66,25 @@ public class PONUDA implements java.io.Serializable
       this.datum_ponude = datum_ponude;
    }
 
-   public PONUDA(java.lang.Integer id_ponuda,
-         java.lang.String ponuda_za_predmet, java.lang.String dobavljac,
-         java.util.Date datum_ponude)
+   public java.lang.Boolean getDostavljeni_orginali()
+   {
+      return this.dostavljeni_orginali;
+   }
+
+   public void setDostavljeni_orginali(java.lang.Boolean dostavljeni_orginali)
+   {
+      this.dostavljeni_orginali = dostavljeni_orginali;
+   }
+
+   public PONUDA(java.lang.Integer id_ponuda, java.lang.String ponuda_za_predmet,
+         java.lang.String dobavljac, java.util.Date datum_ponude,
+         java.lang.Boolean dostavljeni_orginali)
    {
       this.id_ponuda = id_ponuda;
       this.ponuda_za_predmet = ponuda_za_predmet;
       this.dobavljac = dobavljac;
       this.datum_ponude = datum_ponude;
+      this.dostavljeni_orginali = dostavljeni_orginali;
    }
 
 }
