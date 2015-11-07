@@ -49,6 +49,15 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("zalba_odab_pon")
    private java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon;
 
+   @org.kie.api.definition.type.Label(value = "zaprimljeno_voditelj")
+   private java.lang.Boolean zaprimljeno_voditelj;
+
+   @org.kie.api.definition.type.Label(value = "zaprimljeno_referent")
+   private java.lang.Boolean zaprimljeno_referent;
+
+   @org.kie.api.definition.type.Label(value = "azurirano_portal")
+   private java.lang.Boolean azurirano_portal;
+
    public PREDMET_NABAVE()
    {
    }
@@ -178,6 +187,36 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zalba_odab_pon = zalba_odab_pon;
    }
 
+   public java.lang.Boolean getZaprimljeno_voditelj()
+   {
+      return this.zaprimljeno_voditelj;
+   }
+
+   public void setZaprimljeno_voditelj(java.lang.Boolean zaprimljeno_voditelj)
+   {
+      this.zaprimljeno_voditelj = zaprimljeno_voditelj;
+   }
+
+   public java.lang.Boolean getZaprimljeno_referent()
+   {
+      return this.zaprimljeno_referent;
+   }
+
+   public void setZaprimljeno_referent(java.lang.Boolean zaprimljeno_referent)
+   {
+      this.zaprimljeno_referent = zaprimljeno_referent;
+   }
+
+   public java.lang.Boolean getAzurirano_portal()
+   {
+      return this.azurirano_portal;
+   }
+
+   public void setAzurirano_portal(java.lang.Boolean azurirano_portal)
+   {
+      this.azurirano_portal = azurirano_portal;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -190,7 +229,10 @@ public class PREDMET_NABAVE implements java.io.Serializable
          java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija,
          vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon,
          vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon,
-         java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon)
+         java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon,
+         java.lang.Boolean zaprimljeno_voditelj,
+         java.lang.Boolean zaprimljeno_referent,
+         java.lang.Boolean azurirano_portal)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -204,6 +246,9 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_oc_pon = zapisnik_oc_pon;
       this.odluka_odab_pon = odluka_odab_pon;
       this.zalba_odab_pon = zalba_odab_pon;
+      this.zaprimljeno_voditelj = zaprimljeno_voditelj;
+      this.zaprimljeno_referent = zaprimljeno_referent;
+      this.azurirano_portal = azurirano_portal;
    }
 
 }
