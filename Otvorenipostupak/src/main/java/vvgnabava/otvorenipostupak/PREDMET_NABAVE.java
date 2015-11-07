@@ -19,6 +19,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @javax.persistence.Column(nullable = false)
    private java.lang.String ebn;
    @org.kie.api.definition.type.Label("opis_predmeta")
+   @javax.persistence.Column(nullable = false)
    private java.lang.String opis_predmeta;
    @org.kie.api.definition.type.Label("datum_pokretanja")
    @javax.persistence.Column(nullable = false)
