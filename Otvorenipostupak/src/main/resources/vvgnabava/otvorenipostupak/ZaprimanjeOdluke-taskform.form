@@ -3,4 +3,29 @@
 <property name="name" value="ZaprimanjeOdluke-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="predmetNabave_id_odluka_odab_pon" type="InputTextInteger" id="158119555">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id_odluka_odab_pon (predmetNabave)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predemet_nabave_in/id_odluka_odab_pon"/>
+<property name="outputBinding" value="predmet_nabave_out/id_odluka_odab_pon"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="predmetNabave_ebn" type="InputText" id="382817452">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (predmetNabave)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predemet_nabave_in/ebn"/>
+<property name="outputBinding" value="predmet_nabave_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="predmetNabave_datum" type="InputDate" id="1152438826">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;datum (predmetNabave)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predemet_nabave_in/datum"/>
+<property name="outputBinding" value="predmet_nabave_out/datum"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="predemet_nabave_in" name="#E9E371" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON" id="predmetNabave"/>
 </form>
