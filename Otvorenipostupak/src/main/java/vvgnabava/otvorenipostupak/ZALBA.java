@@ -11,11 +11,11 @@ public class ZALBA implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_zalba")
+   @org.kie.api.definition.type.Label("id_zalba")
    private java.lang.Integer id_zalba;
-   @org.kie.api.definition.type.Label(value = "predmet_zalba")
-   private vvgnabava.otvorenipostupak.ZALBA predmet_zalba;
-   @org.kie.api.definition.type.Label(value = "datum_zalbe")
+   @org.kie.api.definition.type.Label("predmet_zalba")
+   private String predmet_zalba;
+   @org.kie.api.definition.type.Label("datum_zalbe")
    private java.util.Date datum_zalbe;
 
    public ZALBA()
@@ -32,16 +32,6 @@ public class ZALBA implements java.io.Serializable
       this.id_zalba = id_zalba;
    }
 
-   public vvgnabava.otvorenipostupak.ZALBA getPredmet_zalba()
-   {
-      return this.predmet_zalba;
-   }
-
-   public void setPredmet_zalba(vvgnabava.otvorenipostupak.ZALBA predmet_zalba)
-   {
-      this.predmet_zalba = predmet_zalba;
-   }
-
    public java.util.Date getDatum_zalbe()
    {
       return this.datum_zalbe;
@@ -52,8 +42,17 @@ public class ZALBA implements java.io.Serializable
       this.datum_zalbe = datum_zalbe;
    }
 
-   public ZALBA(java.lang.Integer id_zalba,
-         vvgnabava.otvorenipostupak.ZALBA predmet_zalba,
+   public java.lang.String getPredmet_zalba()
+   {
+      return this.predmet_zalba;
+   }
+
+   public void setPredmet_zalba(java.lang.String predmet_zalba)
+   {
+      this.predmet_zalba = predmet_zalba;
+   }
+
+   public ZALBA(java.lang.Integer id_zalba, java.lang.String predmet_zalba,
          java.util.Date datum_zalbe)
    {
       this.id_zalba = id_zalba;
