@@ -25,37 +25,13 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @javax.persistence.Column(nullable = false)
    private java.util.Date datum_popkretanja;
 
-   @org.kie.api.definition.type.Label("odluka_pp")
-   private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
-
-   @org.kie.api.definition.type.Label("ponuda")
-   private java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda;
-
-   @org.kie.api.definition.type.Label("zalba")
-   private java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba;
-
-   @org.kie.api.definition.type.Label("zapisnik_uvid_ponude")
-   private java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude;
-
-   @org.kie.api.definition.type.Label("pojasnjenje_dokumentacije")
-   private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija;
-
-   @org.kie.api.definition.type.Label("zapisnik_oc_pon")
-   private vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon;
-
-   @org.kie.api.definition.type.Label("odluka_odab_pon")
-   private vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon;
-
-   @org.kie.api.definition.type.Label("zalba_odab_pon")
-   private java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon;
-
-   @org.kie.api.definition.type.Label(value = "zaprimljeno_voditelj")
+   @org.kie.api.definition.type.Label("zaprimljeno_voditelj")
    private java.lang.Boolean zaprimljeno_voditelj;
 
-   @org.kie.api.definition.type.Label(value = "zaprimljeno_referent")
+   @org.kie.api.definition.type.Label("zaprimljeno_referent")
    private java.lang.Boolean zaprimljeno_referent;
 
-   @org.kie.api.definition.type.Label(value = "azurirano_portal")
+   @org.kie.api.definition.type.Label("azurirano_portal")
    private java.lang.Boolean azurirano_portal;
 
    public PREDMET_NABAVE()
@@ -102,91 +78,6 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.datum_popkretanja = datum_popkretanja;
    }
 
-   public vvgnabava.otvorenipostupak.ODLUKA_PP getOdluka_pp()
-   {
-      return this.odluka_pp;
-   }
-
-   public void setOdluka_pp(vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
-   {
-      this.odluka_pp = odluka_pp;
-   }
-
-   public java.util.List<vvgnabava.otvorenipostupak.PONUDA> getPonuda()
-   {
-      return this.ponuda;
-   }
-
-   public void setPonuda(java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda)
-   {
-      this.ponuda = ponuda;
-   }
-
-   public java.util.List<vvgnabava.otvorenipostupak.ZALBA> getZalba()
-   {
-      return this.zalba;
-   }
-
-   public void setZalba(java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba)
-   {
-      this.zalba = zalba;
-   }
-
-   public java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> getZapisnik_uvid_ponude()
-   {
-      return this.zapisnik_uvid_ponude;
-   }
-
-   public void setZapisnik_uvid_ponude(
-         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude)
-   {
-      this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
-   }
-
-   public java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> getPojasnjene_dokomentacija()
-   {
-      return this.pojasnjene_dokomentacija;
-   }
-
-   public void setPojasnjene_dokomentacija(
-         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija)
-   {
-      this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
-   }
-
-   public vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON getZapisnik_oc_pon()
-   {
-      return this.zapisnik_oc_pon;
-   }
-
-   public void setZapisnik_oc_pon(
-         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon)
-   {
-      this.zapisnik_oc_pon = zapisnik_oc_pon;
-   }
-
-   public vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON getOdluka_odab_pon()
-   {
-      return this.odluka_odab_pon;
-   }
-
-   public void setOdluka_odab_pon(
-         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon)
-   {
-      this.odluka_odab_pon = odluka_odab_pon;
-   }
-
-   public java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> getZalba_odab_pon()
-   {
-      return this.zalba_odab_pon;
-   }
-
-   public void setZalba_odab_pon(
-         java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon)
-   {
-      this.zalba_odab_pon = zalba_odab_pon;
-   }
-
    public java.lang.Boolean getZaprimljeno_voditelj()
    {
       return this.zaprimljeno_voditelj;
@@ -217,19 +108,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.azurirano_portal = azurirano_portal;
    }
 
-   public PREDMET_NABAVE(
-         java.lang.Integer id_predmeta,
-         java.lang.String ebn,
-         java.lang.String opis_predmeta,
-         java.util.Date datum_popkretanja,
-         vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
-         java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda,
-         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba,
-         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid_ponude,
-         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjene_dokomentacija,
-         vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_oc_pon,
-         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odab_pon,
-         java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odab_pon,
+   public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
+         java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
          java.lang.Boolean zaprimljeno_voditelj,
          java.lang.Boolean zaprimljeno_referent,
          java.lang.Boolean azurirano_portal)
@@ -238,14 +118,6 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.ebn = ebn;
       this.opis_predmeta = opis_predmeta;
       this.datum_popkretanja = datum_popkretanja;
-      this.odluka_pp = odluka_pp;
-      this.ponuda = ponuda;
-      this.zalba = zalba;
-      this.zapisnik_uvid_ponude = zapisnik_uvid_ponude;
-      this.pojasnjene_dokomentacija = pojasnjene_dokomentacija;
-      this.zapisnik_oc_pon = zapisnik_oc_pon;
-      this.odluka_odab_pon = odluka_odab_pon;
-      this.zalba_odab_pon = zalba_odab_pon;
       this.zaprimljeno_voditelj = zaprimljeno_voditelj;
       this.zaprimljeno_referent = zaprimljeno_referent;
       this.azurirano_portal = azurirano_portal;
