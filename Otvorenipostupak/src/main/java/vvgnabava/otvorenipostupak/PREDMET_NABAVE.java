@@ -34,6 +34,9 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("azurirano_portal")
    private java.lang.Boolean azurirano_portal;
 
+   @org.kie.api.definition.type.Label(value = "odluka_pp")
+   private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
+
    public PREDMET_NABAVE()
    {
    }
@@ -108,11 +111,22 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.azurirano_portal = azurirano_portal;
    }
 
+   public vvgnabava.otvorenipostupak.ODLUKA_PP getOdluka_pp()
+   {
+      return this.odluka_pp;
+   }
+
+   public void setOdluka_pp(vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
+   {
+      this.odluka_pp = odluka_pp;
+   }
+
    public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
          java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
          java.lang.Boolean zaprimljeno_voditelj,
          java.lang.Boolean zaprimljeno_referent,
-         java.lang.Boolean azurirano_portal)
+         java.lang.Boolean azurirano_portal,
+         vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -121,6 +135,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zaprimljeno_voditelj = zaprimljeno_voditelj;
       this.zaprimljeno_referent = zaprimljeno_referent;
       this.azurirano_portal = azurirano_portal;
+      this.odluka_pp = odluka_pp;
    }
 
 }
