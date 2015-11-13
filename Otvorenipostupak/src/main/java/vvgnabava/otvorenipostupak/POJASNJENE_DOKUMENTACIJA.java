@@ -20,6 +20,9 @@ public class POJASNJENE_DOKUMENTACIJA implements java.io.Serializable
    @org.kie.api.definition.type.Label("ponuditelj")
    private java.lang.String ponuditelj;
 
+   @org.kie.api.definition.type.Label(value = "pojasnjenje")
+   private java.lang.String pojasnjenje;
+
    public POJASNJENE_DOKUMENTACIJA()
    {
    }
@@ -64,13 +67,25 @@ public class POJASNJENE_DOKUMENTACIJA implements java.io.Serializable
       this.ponuditelj = ponuditelj;
    }
 
+   public java.lang.String getPojasnjenje()
+   {
+      return this.pojasnjenje;
+   }
+
+   public void setPojasnjenje(java.lang.String pojasnjenje)
+   {
+      this.pojasnjenje = pojasnjenje;
+   }
+
    public POJASNJENE_DOKUMENTACIJA(java.lang.Integer id_pojasnjenja,
-         java.lang.String ebn, java.util.Date datum, java.lang.String ponuditelj)
+         java.lang.String ebn, java.util.Date datum,
+         java.lang.String ponuditelj, java.lang.String pojasnjenje)
    {
       this.id_pojasnjenja = id_pojasnjenja;
       this.ebn = ebn;
       this.datum = datum;
       this.ponuditelj = ponuditelj;
+      this.pojasnjenje = pojasnjenje;
    }
 
 }
