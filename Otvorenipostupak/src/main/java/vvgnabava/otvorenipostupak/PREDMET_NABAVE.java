@@ -46,14 +46,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("pojasnjenje_dok")
    private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjenje_dok;
 
-   @org.kie.api.definition.type.Label(value = "zalba_odabir")
+   @org.kie.api.definition.type.Label("zalba_odabir")
    private java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odabir;
 
-   @org.kie.api.definition.type.Label(value = "zapisnik_pregled")
+   @org.kie.api.definition.type.Label("zapisnik_pregled")
    private vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_pregled;
 
-   @org.kie.api.definition.type.Label(value = "zapisnik_uvid")
+   @org.kie.api.definition.type.Label("zapisnik_uvid")
    private java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid;
+
+   @org.kie.api.definition.type.Label(value = "odluka_odabir")
+   private vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir;
 
    public PREDMET_NABAVE()
    {
@@ -205,6 +208,17 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_uvid = zapisnik_uvid;
    }
 
+   public vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON getOdluka_odabir()
+   {
+      return this.odluka_odabir;
+   }
+
+   public void setOdluka_odabir(
+         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir)
+   {
+      this.odluka_odabir = odluka_odabir;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -219,7 +233,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjenje_dok,
          java.util.List<vvgnabava.otvorenipostupak.ZALBA_ODAB_PON> zalba_odabir,
          vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_pregled,
-         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid)
+         java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid,
+         vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -235,6 +250,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zalba_odabir = zalba_odabir;
       this.zapisnik_pregled = zapisnik_pregled;
       this.zapisnik_uvid = zapisnik_uvid;
+      this.odluka_odabir = odluka_odabir;
    }
 
 }
