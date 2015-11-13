@@ -27,13 +27,13 @@
 <property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="odlukaUnos_id_predmeta" type="Subform" id="2050393049">
+<field position="3" name="odlukaUnos_opis" type="InputText" id="263802201">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;id_predmeta (odlukaUnos)quot;"/>
+<property name="label" value="quot;enquot;,quot;opis (odlukaUnos)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="odluka_pp_in/id_predmeta"/>
-<property name="outputBinding" value="odluka_pp_out/id_predmeta"/>
-<property name="fieldClass" value="java.lang.Object"/>
+<property name="inputBinding" value="odluka_pp_in/opis"/>
+<property name="outputBinding" value="odluka_pp_out/opis"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="odluka_pp_in" name="#E9E371" type="dataModelerEntry" outId="odluka_pp_out" value="vvgnabava.otvorenipostupak.ODLUKA_PP" id="odlukaUnos"/>
 <dataHolder inputId="predmet_nabave_in" name="#E9E371" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.PREDMET_NABAVE" id="predmetNabave"/>
