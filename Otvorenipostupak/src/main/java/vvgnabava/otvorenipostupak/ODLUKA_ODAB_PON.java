@@ -10,16 +10,17 @@ public class ODLUKA_ODAB_PON implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_odluka_odab_pon")
+   @org.kie.api.definition.type.Label("id_odluka_odab_pon")
    private java.lang.Integer id_odluka_odab_pon;
-   @org.kie.api.definition.type.Label(value = "ebn")
+   @org.kie.api.definition.type.Label("ebn")
    private java.lang.String ebn;
-   @org.kie.api.definition.type.Label(value = "datum")
+   @org.kie.api.definition.type.Label("datum")
    private java.util.Date datum;
-   @org.kie.api.definition.type.Label(value = "odabir")
-   private java.lang.Boolean odabi;
-   @org.kie.api.definition.type.Label(value = "ponistenje")
+   @org.kie.api.definition.type.Label("ponistenje")
    private java.lang.Boolean ponistenje;
+
+   @org.kie.api.definition.type.Label(value = "odabir")
+   private java.lang.Boolean odabir;
 
    public ODLUKA_ODAB_PON()
    {
@@ -55,16 +56,6 @@ public class ODLUKA_ODAB_PON implements java.io.Serializable
       this.datum = datum;
    }
 
-   public java.lang.Boolean getOdabi()
-   {
-      return this.odabi;
-   }
-
-   public void setOdabi(java.lang.Boolean odabi)
-   {
-      this.odabi = odabi;
-   }
-
    public java.lang.Boolean getPonistenje()
    {
       return this.ponistenje;
@@ -75,15 +66,25 @@ public class ODLUKA_ODAB_PON implements java.io.Serializable
       this.ponistenje = ponistenje;
    }
 
+   public java.lang.Boolean getOdabir()
+   {
+      return this.odabir;
+   }
+
+   public void setOdabir(java.lang.Boolean odabir)
+   {
+      this.odabir = odabir;
+   }
+
    public ODLUKA_ODAB_PON(java.lang.Integer id_odluka_odab_pon,
          java.lang.String ebn, java.util.Date datum,
-         java.lang.Boolean odabi, java.lang.Boolean ponistenje)
+         java.lang.Boolean ponistenje, java.lang.Boolean odabir)
    {
       this.id_odluka_odab_pon = id_odluka_odab_pon;
       this.ebn = ebn;
       this.datum = datum;
-      this.odabi = odabi;
       this.ponistenje = ponistenje;
+      this.odabir = odabir;
    }
 
 }
