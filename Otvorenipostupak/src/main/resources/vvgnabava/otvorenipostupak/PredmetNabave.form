@@ -11,18 +11,25 @@
 <property name="outputBinding" value="predmet_nabave_out/ebn"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="predmetNabave_datum_popkretanja" type="InputDate" id="1085602691">
+<field position="2" name="predmetNabave_datum_popkretanja" type="InputDate" id="1085602691">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;datum_popkretanja (predmetNabave)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="predmet_nabave_in/datum_popkretanja"/>
 <property name="outputBinding" value="predmet_nabave_out/datum_popkretanja"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="2" name="predmetNabave_opis_predmeta" type="InputText" id="1846359892">
+<field position="1" name="predmetNabave_opis_predmeta" type="InputText" id="1846359892">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;opis_predmeta (predmetNabave)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;opis_predmeta (predmetNabave)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="size" value="50"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="predmet_nabave_in/opis_predmeta"/>
 <property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
 <property name="fieldClass" value="java.lang.String"/>
