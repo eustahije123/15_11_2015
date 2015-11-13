@@ -18,8 +18,11 @@ public class ZALBA implements java.io.Serializable
    @org.kie.api.definition.type.Label("datum_zalbe")
    private java.util.Date datum_zalbe;
 
-   @org.kie.api.definition.type.Label(value = "Opis")
+   @org.kie.api.definition.type.Label("Opis")
    private java.lang.String opis;
+
+   @org.kie.api.definition.type.Label(value = "ebn")
+   private java.lang.String ebn;
 
    public ZALBA()
    {
@@ -65,13 +68,24 @@ public class ZALBA implements java.io.Serializable
       this.opis = opis;
    }
 
+   public java.lang.String getEbn()
+   {
+      return this.ebn;
+   }
+
+   public void setEbn(java.lang.String ebn)
+   {
+      this.ebn = ebn;
+   }
+
    public ZALBA(java.lang.Integer id_zalba, java.lang.String predmet_zalba,
-         java.util.Date datum_zalbe, java.lang.String opis)
+         java.util.Date datum_zalbe, java.lang.String opis, java.lang.String ebn)
    {
       this.id_zalba = id_zalba;
       this.predmet_zalba = predmet_zalba;
       this.datum_zalbe = datum_zalbe;
       this.opis = opis;
+      this.ebn = ebn;
    }
 
 }
