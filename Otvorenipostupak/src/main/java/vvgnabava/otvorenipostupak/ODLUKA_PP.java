@@ -12,6 +12,7 @@ public class ODLUKA_PP implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("id_odluke")
+   @javax.persistence.Id
    private java.lang.Integer id_odluke;
    @org.kie.api.definition.type.Label("opis")
    private java.lang.String opis;
@@ -19,7 +20,7 @@ public class ODLUKA_PP implements java.io.Serializable
    @org.kie.api.definition.type.Label("predstavnici")
    private java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici;
 
-   @org.kie.api.definition.type.Label(value = "id_predmeta")
+   @org.kie.api.definition.type.Label("id_predmeta")
    private vvgnabava.otvorenipostupak.PREDMET_NABAVE id_predmeta;
 
    public ODLUKA_PP()
