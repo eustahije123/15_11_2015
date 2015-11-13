@@ -37,11 +37,14 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_pp")
    private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
 
-   @org.kie.api.definition.type.Label(value = "ponuda_pred")
+   @org.kie.api.definition.type.Label("ponuda_pred")
    private java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda_pred;
 
-   @org.kie.api.definition.type.Label(value = "zalba_pred")
+   @org.kie.api.definition.type.Label("zalba_pred")
    private java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred;
+
+   @org.kie.api.definition.type.Label(value = "pojasnjenje_dok")
+   private java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjenje_dok;
 
    public PREDMET_NABAVE()
    {
@@ -149,14 +152,29 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zalba_pred = zalba_pred;
    }
 
-   public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
-         java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
+   public java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> getPojasnjenje_dok()
+   {
+      return this.pojasnjenje_dok;
+   }
+
+   public void setPojasnjenje_dok(
+         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjenje_dok)
+   {
+      this.pojasnjenje_dok = pojasnjenje_dok;
+   }
+
+   public PREDMET_NABAVE(
+         java.lang.Integer id_predmeta,
+         java.lang.String ebn,
+         java.lang.String opis_predmeta,
+         java.util.Date datum_popkretanja,
          java.lang.Boolean zaprimljeno_voditelj,
          java.lang.Boolean zaprimljeno_referent,
          java.lang.Boolean azurirano_portal,
          vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
          java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda_pred,
-         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred)
+         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred,
+         java.util.List<vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA> pojasnjenje_dok)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -168,6 +186,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.odluka_pp = odluka_pp;
       this.ponuda_pred = ponuda_pred;
       this.zalba_pred = zalba_pred;
+      this.pojasnjenje_dok = pojasnjenje_dok;
    }
 
 }
