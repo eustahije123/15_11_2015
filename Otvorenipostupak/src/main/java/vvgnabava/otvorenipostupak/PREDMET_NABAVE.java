@@ -34,8 +34,14 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("azurirano_portal")
    private java.lang.Boolean azurirano_portal;
 
-   @org.kie.api.definition.type.Label(value = "odluka_pp")
+   @org.kie.api.definition.type.Label("odluka_pp")
    private vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp;
+
+   @org.kie.api.definition.type.Label(value = "ponuda_pred")
+   private java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda_pred;
+
+   @org.kie.api.definition.type.Label(value = "zalba_pred")
+   private java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred;
 
    public PREDMET_NABAVE()
    {
@@ -121,12 +127,36 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.odluka_pp = odluka_pp;
    }
 
+   public java.util.List<vvgnabava.otvorenipostupak.PONUDA> getPonuda_pred()
+   {
+      return this.ponuda_pred;
+   }
+
+   public void setPonuda_pred(
+         java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda_pred)
+   {
+      this.ponuda_pred = ponuda_pred;
+   }
+
+   public java.util.List<vvgnabava.otvorenipostupak.ZALBA> getZalba_pred()
+   {
+      return this.zalba_pred;
+   }
+
+   public void setZalba_pred(
+         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred)
+   {
+      this.zalba_pred = zalba_pred;
+   }
+
    public PREDMET_NABAVE(java.lang.Integer id_predmeta, java.lang.String ebn,
          java.lang.String opis_predmeta, java.util.Date datum_popkretanja,
          java.lang.Boolean zaprimljeno_voditelj,
          java.lang.Boolean zaprimljeno_referent,
          java.lang.Boolean azurirano_portal,
-         vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp)
+         vvgnabava.otvorenipostupak.ODLUKA_PP odluka_pp,
+         java.util.List<vvgnabava.otvorenipostupak.PONUDA> ponuda_pred,
+         java.util.List<vvgnabava.otvorenipostupak.ZALBA> zalba_pred)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -136,6 +166,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zaprimljeno_referent = zaprimljeno_referent;
       this.azurirano_portal = azurirano_portal;
       this.odluka_pp = odluka_pp;
+      this.ponuda_pred = ponuda_pred;
+      this.zalba_pred = zalba_pred;
    }
 
 }
