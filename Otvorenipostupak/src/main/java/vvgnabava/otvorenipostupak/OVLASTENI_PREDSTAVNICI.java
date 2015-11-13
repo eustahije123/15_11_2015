@@ -11,9 +11,10 @@ public class OVLASTENI_PREDSTAVNICI implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_predstavnika")
+   @org.kie.api.definition.type.Label("id_predstavnika")
+   @javax.persistence.Id
    private java.lang.Integer id_predstavnika;
-   @org.kie.api.definition.type.Label(value = "ime_prezime")
+   @org.kie.api.definition.type.Label("ime_prezime")
    private java.lang.String ime_prezime;
 
    public OVLASTENI_PREDSTAVNICI()
