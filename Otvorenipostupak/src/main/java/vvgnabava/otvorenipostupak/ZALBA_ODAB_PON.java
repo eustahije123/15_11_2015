@@ -10,12 +10,15 @@ public class ZALBA_ODAB_PON implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "id_zalba_oda_pon")
+   @org.kie.api.definition.type.Label("id_zalba_oda_pon")
    private java.lang.Integer id_zalba_oda_pon;
-   @org.kie.api.definition.type.Label(value = "broj_odl_odabir")
+   @org.kie.api.definition.type.Label("broj_odl_odabir")
    private java.lang.String broj_odl_odabir;
-   @org.kie.api.definition.type.Label(value = "datum")
+   @org.kie.api.definition.type.Label("datum")
    private java.util.Date datum;
+
+   @org.kie.api.definition.type.Label(value = "ebn")
+   private java.lang.String ebn;
 
    public ZALBA_ODAB_PON()
    {
@@ -51,12 +54,24 @@ public class ZALBA_ODAB_PON implements java.io.Serializable
       this.datum = datum;
    }
 
+   public java.lang.String getEbn()
+   {
+      return this.ebn;
+   }
+
+   public void setEbn(java.lang.String ebn)
+   {
+      this.ebn = ebn;
+   }
+
    public ZALBA_ODAB_PON(java.lang.Integer id_zalba_oda_pon,
-         java.lang.String broj_odl_odabir, java.util.Date datum)
+         java.lang.String broj_odl_odabir, java.util.Date datum,
+         java.lang.String ebn)
    {
       this.id_zalba_oda_pon = id_zalba_oda_pon;
       this.broj_odl_odabir = broj_odl_odabir;
       this.datum = datum;
+      this.ebn = ebn;
    }
 
 }
