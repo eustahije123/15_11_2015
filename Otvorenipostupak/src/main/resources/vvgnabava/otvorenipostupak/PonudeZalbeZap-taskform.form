@@ -1,0 +1,71 @@
+
+<form id="1080636363">
+<property name="name" value="PonudeZalbeZap-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="predmet_nabave_gl_id_predmeta" type="InputTextInteger" id="533015509">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/id_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/id_predmeta"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="6" name="predmet_nabave_gl_zaprimljeno_referent" type="CheckBox" id="64804780">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zaprimljeno_referent (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zaprimljeno_referent"/>
+<property name="outputBinding" value="predmet_nabave_out/zaprimljeno_referent"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="0" name="predmet_nabave_gl_azurirano_portal" type="CheckBox" id="1912010503">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;azurirano_portal (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/azurirano_portal"/>
+<property name="outputBinding" value="predmet_nabave_out/azurirano_portal"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="1" name="predmet_nabave_gl_datum_popkretanja" type="InputDate" id="1191449825">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;datum_popkretanja (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/datum_popkretanja"/>
+<property name="outputBinding" value="predmet_nabave_out/datum_popkretanja"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="4" name="predmet_nabave_gl_odluka_pp" type="Subform" id="1655635833">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;odluka_pp (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/odluka_pp"/>
+<property name="outputBinding" value="predmet_nabave_out/odluka_pp"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="7" name="predmet_nabave_gl_zaprimljeno_voditelj" type="CheckBox" id="412545838">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zaprimljeno_voditelj (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zaprimljeno_voditelj"/>
+<property name="outputBinding" value="predmet_nabave_out/zaprimljeno_voditelj"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="predmet_nabave_gl_ebn" type="InputText" id="31659050">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/ebn"/>
+<property name="outputBinding" value="predmet_nabave_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="predmet_nabave_gl_opis_predmeta" type="InputText" id="1091532644">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;opis_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/opis_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="predmet_nabave_in" name="#A7E690" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.PREDMET_NABAVE" id="predmet_nabave_gl"/>
+</form>
