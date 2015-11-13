@@ -58,8 +58,11 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("odluka_odabir")
    private vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir;
 
-   @org.kie.api.definition.type.Label(value = "kontrola_rac_pogreska")
+   @org.kie.api.definition.type.Label("kontrola_rac_pogreska")
    private java.lang.Integer kontrola_rac_pogreska;
+
+   @org.kie.api.definition.type.Label(value = "upisnik")
+   private vvgnabava.otvorenipostupak.UPISNIK upsinik;
 
    public PREDMET_NABAVE()
    {
@@ -232,6 +235,16 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.kontrola_rac_pogreska = kontrola_rac_pogreska;
    }
 
+   public vvgnabava.otvorenipostupak.UPISNIK getUpsinik()
+   {
+      return this.upsinik;
+   }
+
+   public void setUpsinik(vvgnabava.otvorenipostupak.UPISNIK upsinik)
+   {
+      this.upsinik = upsinik;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -248,7 +261,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          vvgnabava.otvorenipostupak.ZAP_PREG_OCJ_PON zapisnik_pregled,
          java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid,
          vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir,
-         java.lang.Integer kontrola_rac_pogreska)
+         java.lang.Integer kontrola_rac_pogreska,
+         vvgnabava.otvorenipostupak.UPISNIK upsinik)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -266,6 +280,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.zapisnik_uvid = zapisnik_uvid;
       this.odluka_odabir = odluka_odabir;
       this.kontrola_rac_pogreska = kontrola_rac_pogreska;
+      this.upsinik = upsinik;
    }
 
 }
