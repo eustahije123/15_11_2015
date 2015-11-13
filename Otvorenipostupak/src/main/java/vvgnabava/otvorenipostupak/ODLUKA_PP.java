@@ -19,6 +19,9 @@ public class ODLUKA_PP implements java.io.Serializable
    @org.kie.api.definition.type.Label("predstavnici")
    private java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici;
 
+   @org.kie.api.definition.type.Label(value = "id_predmeta")
+   private vvgnabava.otvorenipostupak.PREDMET_NABAVE id_predmeta;
+
    public ODLUKA_PP()
    {
    }
@@ -54,14 +57,26 @@ public class ODLUKA_PP implements java.io.Serializable
       this.predstavnici = predstavnici;
    }
 
+   public vvgnabava.otvorenipostupak.PREDMET_NABAVE getId_predmeta()
+   {
+      return this.id_predmeta;
+   }
+
+   public void setId_predmeta(vvgnabava.otvorenipostupak.PREDMET_NABAVE id_predmeta)
+   {
+      this.id_predmeta = id_predmeta;
+   }
+
    public ODLUKA_PP(
          java.lang.Integer id_odluke,
          java.lang.String opis,
-         java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici)
+         java.util.List<vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI> predstavnici,
+         vvgnabava.otvorenipostupak.PREDMET_NABAVE id_predmeta)
    {
       this.id_odluke = id_odluke;
       this.opis = opis;
       this.predstavnici = predstavnici;
+      this.id_predmeta = id_predmeta;
    }
 
 }
