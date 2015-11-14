@@ -1,0 +1,165 @@
+
+<form id="2017124072">
+<property name="name" value="DostavljanjeOdlukeReferentu-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="8" name="predmet_nabave_gl_odluka_odabir" type="Subform" id="1493130013">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;odluka_odabir (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/odluka_odabir"/>
+<property name="outputBinding" value="predmet_nabave_out/odluka_odabir"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="12" name="predmet_nabave_gl_ponuda_pred" bag-type="vvgnabava.otvorenipostupak.PONUDA" type="MultipleSubform" id="10553859">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ponuda_pred (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/ponuda_pred"/>
+<property name="outputBinding" value="predmet_nabave_out/ponuda_pred"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="14" name="predmet_nabave_gl_zalba_odabir" bag-type="vvgnabava.otvorenipostupak.ZALBA_ODAB_PON" type="MultipleSubform" id="869211692">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zalba_odabir (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zalba_odabir"/>
+<property name="outputBinding" value="predmet_nabave_out/zalba_odabir"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="13" name="predmet_nabave_gl_upsinik" type="Subform" id="2051535171">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;upsinik (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/upsinik"/>
+<property name="outputBinding" value="predmet_nabave_out/upsinik"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="3" name="predmet_nabave_gl_azurirano_portal" type="CheckBox" id="2136754644">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;azurirano_portal (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/azurirano_portal"/>
+<property name="outputBinding" value="predmet_nabave_out/azurirano_portal"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="19" name="predmet_nabave_gl_zaprimljeno_voditelj" type="CheckBox" id="233099149">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zaprimljeno_voditelj (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zaprimljeno_voditelj"/>
+<property name="outputBinding" value="predmet_nabave_out/zaprimljeno_voditelj"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="odluka_pp_gl_predstavnici" bag-type="vvgnabava.otvorenipostupak.OVLASTENI_PREDSTAVNICI" type="MultipleSubform" id="1724244905">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;predstavnici (odluka_pp_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="odluka_pp_in/predstavnici"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="5" name="predmet_nabave_gl_ebn" type="InputText" id="1009049384">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/ebn"/>
+<property name="outputBinding" value="predmet_nabave_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="predmet_nabave_gl_kontrola_rac_pogreska" type="InputTextInteger" id="344813441">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;kontrola_rac_pogreska (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/kontrola_rac_pogreska"/>
+<property name="outputBinding" value="predmet_nabave_out/kontrola_rac_pogreska"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="18" name="predmet_nabave_gl_zaprimljeno_referent" type="CheckBox" id="230983625">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zaprimljeno_referent (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zaprimljeno_referent"/>
+<property name="outputBinding" value="predmet_nabave_out/zaprimljeno_referent"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="6" name="predmet_nabave_gl_id_predmeta" type="InputTextInteger" id="1545812914">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/id_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/id_predmeta"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="9" name="predmet_nabave_gl_odluka_pp" type="Subform" id="1168069902">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;odluka_pp (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/odluka_pp"/>
+<property name="outputBinding" value="predmet_nabave_out/odluka_pp"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="10" name="predmet_nabave_gl_opis_predmeta" type="InputText" id="168669276">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;opis_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/opis_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="odluka_pp_gl_opis" type="InputText" id="1435605219">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;opis (odluka_pp_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="odluka_pp_in/opis"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="16" name="predmet_nabave_gl_zapisnik_pregled" type="Subform" id="570500918">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zapisnik_pregled (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zapisnik_pregled"/>
+<property name="outputBinding" value="predmet_nabave_out/zapisnik_pregled"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="17" name="predmet_nabave_gl_zapisnik_uvid" bag-type="vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON" type="MultipleSubform" id="1988218200">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zapisnik_uvid (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zapisnik_uvid"/>
+<property name="outputBinding" value="predmet_nabave_out/zapisnik_uvid"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="0" name="odluka_pp_gl_id_odluke" type="InputTextInteger" id="53543693">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id_odluke (odluka_pp_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="odluka_pp_in/id_odluke"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="11" name="predmet_nabave_gl_pojasnjenje_dok" bag-type="vvgnabava.otvorenipostupak.POJASNJENE_DOKUMENTACIJA" type="MultipleSubform" id="707178587">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;pojasnjenje_dok (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/pojasnjenje_dok"/>
+<property name="outputBinding" value="predmet_nabave_out/pojasnjenje_dok"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="15" name="predmet_nabave_gl_zalba_pred" bag-type="vvgnabava.otvorenipostupak.ZALBA" type="MultipleSubform" id="1451054240">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zalba_pred (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/zalba_pred"/>
+<property name="outputBinding" value="predmet_nabave_out/zalba_pred"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="4" name="predmet_nabave_gl_datum_popkretanja" type="InputDate" id="1153040134">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;datum_popkretanja (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/datum_popkretanja"/>
+<property name="outputBinding" value="predmet_nabave_out/datum_popkretanja"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="odluka_pp_in" name="#FF8881" type="dataModelerEntry" outId="" value="vvgnabava.otvorenipostupak.ODLUKA_PP" id="odluka_pp_gl"/>
+<dataHolder inputId="predmet_nabave_in" name="#A7E690" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.PREDMET_NABAVE" id="predmet_nabave_gl"/>
+</form>
