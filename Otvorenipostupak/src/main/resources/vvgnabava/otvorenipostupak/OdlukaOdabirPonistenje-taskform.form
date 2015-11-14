@@ -3,4 +3,37 @@
 <property name="name" value="OdlukaOdabirPonistenje-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="predmet_nabave_gl_ebn" type="InputText" id="797295306">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/ebn"/>
+<property name="outputBinding" value="predmet_nabave_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="predmet_nabave_gl_datum_popkretanja" type="InputDate" id="580674800">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;datum_popkretanja (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/datum_popkretanja"/>
+<property name="outputBinding" value="predmet_nabave_out/datum_popkretanja"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="predmet_nabave_gl_opis_predmeta" type="InputText" id="397969948">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;opis_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/opis_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="predmet_nabave_gl_odluka_odabir" type="Subform" id="493343842">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;odluka_odabir (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/odluka_odabir"/>
+<property name="outputBinding" value="predmet_nabave_out/odluka_odabir"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<dataHolder inputId="predmet_nabave_in" name="#E9E371" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.PREDMET_NABAVE" id="predmet_nabave_gl"/>
 </form>
