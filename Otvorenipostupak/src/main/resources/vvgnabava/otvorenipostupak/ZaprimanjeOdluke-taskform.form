@@ -3,4 +3,41 @@
 <property name="name" value="ZaprimanjeOdluke-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="predmet_nabave_gl_ebn" type="InputText" id="608812410">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/ebn"/>
+<property name="outputBinding" value="predmet_nabave_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="predmet_nabave_gl_datum_popkretanja" type="InputDate" id="2017472513">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;datum_popkretanja (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/datum_popkretanja"/>
+<property name="outputBinding" value="predmet_nabave_out/datum_popkretanja"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="predmet_nabave_gl_opis_predmeta" type="InputText" id="1445181374">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;opis_predmeta (predmet_nabave_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/opis_predmeta"/>
+<property name="outputBinding" value="predmet_nabave_out/opis_predmeta"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="predmet_nabave_gl_odluka_pp" type="Subform" id="446536681">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;odluka_pp (predmet_nabave_gl)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="predmet_nabave_in/odluka_pp"/>
+<property name="outputBinding" value="predmet_nabave_out/odluka_pp"/>
+<property name="defaultSubform" value="OdlukaPP.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<dataHolder inputId="predmet_nabave_in" name="#E9E371" type="dataModelerEntry" outId="predmet_nabave_out" value="vvgnabava.otvorenipostupak.PREDMET_NABAVE" id="predmet_nabave_gl"/>
 </form>
