@@ -3,23 +3,6 @@
 <property name="name" value="Zalba_zaprimanje.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="1" name="zalba_gl_datum_zalbe" type="InputDate" id="763542349">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;datum_zalbe (zalba_gl)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="zalba_pred_in/datum_zalbe"/>
-<property name="outputBinding" value="zalba_pred_out/datum_zalbe"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="2" name="zalba_gl_opis" type="InputText" id="856451560">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;opis (zalba_gl)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="zalba_pred_in/opis"/>
-<property name="outputBinding" value="zalba_pred_out/opis"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <field position="0" name="zalba_gl_ebn" type="InputText" id="45351240">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
@@ -28,6 +11,44 @@
 <property name="inputBinding" value="zalba_pred_in/ebn"/>
 <property name="outputBinding" value="zalba_pred_out/ebn"/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="zalba_gl_datum_zalbe" type="InputDate" id="763542349">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;datum_zalbe (zalba_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_pred_in/datum_zalbe"/>
+<property name="outputBinding" value="zalba_pred_out/datum_zalbe"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="zalba_gl_opis" type="InputText" id="856451560">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;opis (zalba_gl)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="size" value="100"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="zalba_pred_in/opis"/>
+<property name="outputBinding" value="zalba_pred_out/opis"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="zalba_gl_dokumentacija_zal" type="CheckBox" id="2102913092">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dokumentacija_zal (zalba_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_pred_in/dokumentacija_zal"/>
+<property name="outputBinding" value="zalba_pred_out/dokumentacija_zal"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="zalba_gl_pojasnjenje" type="CheckBox" id="1078618991">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;pojasnjenje (zalba_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_pred_in/pojasnjenje"/>
+<property name="outputBinding" value="zalba_pred_out/pojasnjenje"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
 </field>
 <dataHolder inputId="zalba_pred_in" name="#E9E371" type="dataModelerEntry" outId="zalba_pred_out" value="vvgnabava.otvorenipostupak.ZALBA" id="zalba_gl"/>
 </form>
