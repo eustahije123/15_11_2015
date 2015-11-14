@@ -3,4 +3,5 @@
 <property name="name" value="ZalbaOdlukaOdabir.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<dataHolder inputId="zalba_odab_pon_in" name="#E9E371" type="dataModelerEntry" outId="zalba_odab_pon_out" value="vvgnabava.otvorenipostupak.ZALBA_ODAB_PON" id="zalba_odab_pon_gl"/>
 </form>
