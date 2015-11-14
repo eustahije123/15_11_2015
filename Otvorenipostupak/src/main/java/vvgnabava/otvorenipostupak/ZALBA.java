@@ -22,6 +22,12 @@ public class ZALBA implements java.io.Serializable
    @org.kie.api.definition.type.Label("ebn")
    private java.lang.String ebn;
 
+   @org.kie.api.definition.type.Label(value = "pojasnjenje")
+   private java.lang.Boolean pojasnjenje;
+
+   @org.kie.api.definition.type.Label(value = "dokumentacija_zal")
+   private java.lang.Boolean dokumentacija_zal;
+
    public ZALBA()
    {
    }
@@ -66,13 +72,36 @@ public class ZALBA implements java.io.Serializable
       this.ebn = ebn;
    }
 
+   public java.lang.Boolean getPojasnjenje()
+   {
+      return this.pojasnjenje;
+   }
+
+   public void setPojasnjenje(java.lang.Boolean pojasnjenje)
+   {
+      this.pojasnjenje = pojasnjenje;
+   }
+
+   public java.lang.Boolean getDokumentacija_zal()
+   {
+      return this.dokumentacija_zal;
+   }
+
+   public void setDokumentacija_zal(java.lang.Boolean dokumentacija_zal)
+   {
+      this.dokumentacija_zal = dokumentacija_zal;
+   }
+
    public ZALBA(java.lang.Integer id_zalba, java.util.Date datum_zalbe,
-         java.lang.String opis, java.lang.String ebn)
+         java.lang.String opis, java.lang.String ebn,
+         java.lang.Boolean pojasnjenje, java.lang.Boolean dokumentacija_zal)
    {
       this.id_zalba = id_zalba;
       this.datum_zalbe = datum_zalbe;
       this.opis = opis;
       this.ebn = ebn;
+      this.pojasnjenje = pojasnjenje;
+      this.dokumentacija_zal = dokumentacija_zal;
    }
 
 }
