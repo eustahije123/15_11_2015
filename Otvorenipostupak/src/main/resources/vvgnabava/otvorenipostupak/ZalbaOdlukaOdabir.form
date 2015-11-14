@@ -3,5 +3,29 @@
 <property name="name" value="ZalbaOdlukaOdabir.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="zalba_odab_pon_gl_ebn" type="InputText" id="980015823">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ebn (zalba_odab_pon_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_odab_pon_in/ebn"/>
+<property name="outputBinding" value="zalba_odab_pon_out/ebn"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="zalba_odab_pon_gl_datum" type="InputDate" id="437788254">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;datum (zalba_odab_pon_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_odab_pon_in/datum"/>
+<property name="outputBinding" value="zalba_odab_pon_out/datum"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="zalba_odab_pon_gl_broj_odl_odabir" type="InputText" id="807178230">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;broj_odl_odabir (zalba_odab_pon_gl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="zalba_odab_pon_in/broj_odl_odabir"/>
+<property name="outputBinding" value="zalba_odab_pon_out/broj_odl_odabir"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="zalba_odab_pon_in" name="#E9E371" type="dataModelerEntry" outId="zalba_odab_pon_out" value="vvgnabava.otvorenipostupak.ZALBA_ODAB_PON" id="zalba_odab_pon_gl"/>
 </form>
