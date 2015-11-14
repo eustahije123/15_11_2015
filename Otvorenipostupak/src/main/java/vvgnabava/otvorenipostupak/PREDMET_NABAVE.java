@@ -61,8 +61,11 @@ public class PREDMET_NABAVE implements java.io.Serializable
    @org.kie.api.definition.type.Label("kontrola_rac_pogreska")
    private java.lang.Integer kontrola_rac_pogreska;
 
-   @org.kie.api.definition.type.Label(value = "upisnik")
+   @org.kie.api.definition.type.Label("upisnik")
    private vvgnabava.otvorenipostupak.UPISNIK upsinik;
+
+   @org.kie.api.definition.type.Label(value = "zapisnik_preg_pon")
+   private java.lang.Boolean zapisnik_preg_pon;
 
    public PREDMET_NABAVE()
    {
@@ -245,6 +248,16 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.upsinik = upsinik;
    }
 
+   public java.lang.Boolean getZapisnik_preg_pon()
+   {
+      return this.zapisnik_preg_pon;
+   }
+
+   public void setZapisnik_preg_pon(java.lang.Boolean zapisnik_preg_pon)
+   {
+      this.zapisnik_preg_pon = zapisnik_preg_pon;
+   }
+
    public PREDMET_NABAVE(
          java.lang.Integer id_predmeta,
          java.lang.String ebn,
@@ -262,7 +275,8 @@ public class PREDMET_NABAVE implements java.io.Serializable
          java.util.List<vvgnabava.otvorenipostupak.ZAPISNIK_UVID_PON> zapisnik_uvid,
          vvgnabava.otvorenipostupak.ODLUKA_ODAB_PON odluka_odabir,
          java.lang.Integer kontrola_rac_pogreska,
-         vvgnabava.otvorenipostupak.UPISNIK upsinik)
+         vvgnabava.otvorenipostupak.UPISNIK upsinik,
+         java.lang.Boolean zapisnik_preg_pon)
    {
       this.id_predmeta = id_predmeta;
       this.ebn = ebn;
@@ -281,6 +295,7 @@ public class PREDMET_NABAVE implements java.io.Serializable
       this.odluka_odabir = odluka_odabir;
       this.kontrola_rac_pogreska = kontrola_rac_pogreska;
       this.upsinik = upsinik;
+      this.zapisnik_preg_pon = zapisnik_preg_pon;
    }
 
 }
